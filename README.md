@@ -11,7 +11,7 @@ Needed from kcp:
 Install:
 
 ```
-kcp -di gtksourceview3
+kcp -di python3-pexpect python3-psutil python3-sqlalchemy gtksourceview3 adwaita-icon-theme
 ```
 
 ```
