@@ -7,7 +7,11 @@ URL: http://pychess.org/
 Needed from kcp:
 
 ```
-kcp -di python3-pexpect python3-psutil python3-sqlalchemy gtksourceview3 adwaita-icon-theme
+kcp -i python3-pexpect 
+kcp -i python3-psutil 
+kcp -i python3-sqlalchemy 
+kcp -i gtksourceview3 
+kcp -i adwaita-icon-theme
 ```
 
 ```
