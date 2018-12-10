@@ -1,17 +1,21 @@
 pkgname=pychess
-pkgver=0.12.3
-pkgrel=2
+pkgver=0.99.3
+pkgrel=1
 pkgdesc='Chess client'
 arch=('x86_64')
 url='http://pychess.org/'
 license=('GPL')
-depends=('python2-gobject' 'python2-cairo' 'gtksourceview3' 'gst-plugins-base' 'desktop-file-utils')
+depends=('python3-gobject3' 'python3-psutil' 'python3-cairo' 'python3-pexpect' 'python3-ptyprocess' 'gtksourceview3' 'gst-plugins-base' 'desktop-file-utils' 'adwaita-icon-theme' 'xorg-server')
+makedepends=('git' 'python3-pexpect' 'python3-ptyprocess')
 optdepends=('gnuchess: a chess engine for graphical chess frontends')
 install=pychess.install
-source=("http://www.pychess.org/download/${pkgname}-$pkgver.tar.gz")
-md5sums=('70035ee3523f7d1c182137a9e146050c')
+source=("https://github.com/pychess/pychess/releases/download/$pkgver/${pkgname}-$pkgver.tar.gz")
+md5sums=('2b32e63e36beeddd226f23035fabfa90')
 
 package() {
   cd "${pkgname}-$pkgver"
-  python setup.py install --prefix=/usr --root=$pkgdir
+  python3 setup.py install --prefix=/usr --root=$pkgdir
+
+  # FS#59882
+  find "$pkgdir" -wholename "external/pexpect" -type d -delete
 }
