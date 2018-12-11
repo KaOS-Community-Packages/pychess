@@ -1,5 +1,5 @@
 pkgname=pychess
-pkgver=0.99.3
+pkgver=0.99.4
 pkgrel=1
 pkgdesc='Chess client'
 arch=('x86_64')
@@ -10,7 +10,7 @@ makedepends=('git' 'python3-pexpect' 'python3-ptyprocess')
 optdepends=('gnuchess: a chess engine for graphical chess frontends')
 install=pychess.install
 source=("https://github.com/pychess/pychess/releases/download/$pkgver/${pkgname}-$pkgver.tar.gz")
-md5sums=('2b32e63e36beeddd226f23035fabfa90')
+md5sums=('c2bf0b0610891eae5d68cafc753307df')
 
 package() {
   cd "${pkgname}-$pkgver"
