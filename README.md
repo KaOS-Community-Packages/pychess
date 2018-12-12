@@ -13,6 +13,7 @@ kcp -i python3-psutil
 kcp -i python3-sqlalchemy 
 kcp -i gtksourceview3 
 kcp -i adwaita-icon-theme
+kcp -i stockfish
 ```
 
 ```
