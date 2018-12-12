@@ -1,11 +1,11 @@
 pkgname=pychess
 pkgver=0.99.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Chess client'
 arch=('x86_64')
 url='http://pychess.org/'
 license=('GPL')
-depends=('python3-gobject3' 'python3-psutil' 'python3-cairo' 'python3-sqlalchemy' 'python3-pexpect' 'python3-ptyprocess' 'gtksourceview3' 'gst-plugins-base' 'desktop-file-utils' 'adwaita-icon-theme' 'xorg-server')
+depends=('python3-gobject3' 'python3-psutil' 'python3-cairo' 'python3-sqlalchemy' 'python3-pexpect' 'python3-ptyprocess' 'gtksourceview3' 'gst-plugins-base' 'desktop-file-utils' 'adwaita-icon-theme' 'sqlite')
 makedepends=('git' 'python3-pexpect' 'python3-ptyprocess')
 optdepends=('gnuchess: a chess engine for graphical chess frontends')
 install=pychess.install
