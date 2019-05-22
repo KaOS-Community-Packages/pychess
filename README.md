@@ -11,6 +11,7 @@ kcp -i python3-pexpect
 kcp -i python3-ptyprocess
 kcp -i python3-psutil 
 kcp -i python3-sqlalchemy 
+kcp -i python3-websockets
 kcp -i gtksourceview3 
 kcp -i adwaita-icon-theme
 kcp -i stockfish
