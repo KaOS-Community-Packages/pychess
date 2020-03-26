@@ -1,8 +1,8 @@
-![PyChess](http://pychess.org/images/pychess.png)
+![PyChess](https://pychess.github.io/images/logo.png)
 =====
 Chess client
 
-URL: http://pychess.org/
+URL: https://pychess.github.io/
 
 Needed from kcp:
 
