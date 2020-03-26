@@ -1,9 +1,9 @@
 pkgname=pychess
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Chess client'
 arch=('x86_64')
-url='http://pychess.org/'
+url='https://pychess.github.io/'
 license=('GPL')
 depends=('python3-gobject3' 'python3-psutil' 'python3-cairo' 'python3-sqlalchemy' 'python3-pexpect' 'python3-ptyprocess' 'python3-websockets' 'gtksourceview3' 'gst-plugins-base' 'desktop-file-utils' 'adwaita-icon-theme' 'sqlite' 'stockfish')
 makedepends=('git' 'python3-pexpect' 'python3-ptyprocess')
